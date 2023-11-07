@@ -5,7 +5,7 @@ import React from 'react'
 
 const Avatar = () => {
   return (
-    <div className='relative h-64 w-64  rounded-full  bg-cyan-600 dark:bg-white '>
+    <div className='relative h-52 w-52  rounded-full bg-cyan-600 dark:bg-white  md:h-64 md:w-64 '>
       <Image
         src={avatar}
         alt='Trần Được'

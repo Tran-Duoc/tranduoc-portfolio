@@ -8,10 +8,10 @@ import TextField from '@/components/TextField'
 
 const About = () => {
   return (
-    <section className='flex min-h-screen items-center justify-center border-y-2 px-2 dark:bg-[#0F172A] lg:px-0'>
+    <section className='flex min-h-screen items-center justify-center border-y-2 px-2 dark:bg-[#0F172A]  '>
       <div className='mx-auto w-full max-w-[96rem] '>
-        <div className='grid grid-flow-dense grid-cols-1 grid-rows-2 gap-4 lg:grid-cols-3'>
-          <div className='order-last  col-span-1 lg:order-[unset] lg:col-span-2'>
+        <div className='grid grid-flow-dense grid-cols-1 gap-4 lg:grid-cols-3 text'>
+          <div className='col-span-1 lg:order-[unset] lg:col-span-2'>
             <TextField title='About me' size='5xl' />
             <div className='mt-5 w-full max-w-4xl '>
               <motion.div
@@ -59,10 +59,10 @@ const About = () => {
           </div>
           <div className='col-span-1'>
             <motion.div
-              initial={{ opacity: 0, x: 100 }}
+              initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4 }}
-              className='relative   w-full overflow-hidden rounded-2xl  border-2 '
+              className='relative w-full overflow-hidden rounded-2xl  border-2 '
             >
               <Image src={coding} alt='This is coding image' />
             </motion.div>

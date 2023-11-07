@@ -20,7 +20,7 @@ const userIntro = {
 }
 
 const buttonStyle: React.CSSProperties = {
-  padding: '1.5rem 1.2rem'
+  padding: '1.3rem 1.2rem'
 }
 
 const iconSocials: { icon: React.ReactNode; link: string }[] = [
@@ -40,7 +40,7 @@ const iconSocials: { icon: React.ReactNode; link: string }[] = [
 
 const Intro = () => {
   return (
-    <section className='relative mt-[4.5rem] flex min-h-[calc(100vh-4.5rem)] flex-col items-center justify-center gap-5 pb-5 md:pb-20 '>
+    <section className='relative mt-[4.5rem] flex min-h-[calc(100vh-4.5rem)] flex-col items-center justify-center gap-2 pb-5 md:gap-5 md:pb-20 '>
       <Avatar />
       <div className='mx-auto max-w-3xl space-y-2 text-center'>
         <TextField size='title' title='Hi,' hover />
@@ -54,9 +54,9 @@ const Intro = () => {
           <SkillStyle name={userIntro['profile'].javascript} color='neon_yellow' />
         </span>
       </div>
-      <div className='mt-5 flex flex-col items-center justify-center gap-2'>
-        <div className='flex w-full flex-col items-center gap-4 md:flex-row '>
-          <Button asChild className='rounded-full text-lg hover:-translate-y-1  ' style={buttonStyle}>
+      <div className='mt-3 flex flex-col items-center justify-center gap-2 md:mt-5'>
+        <div className='flex w-full flex-col items-center gap-2 md:flex-row md:gap-4 '>
+          <Button asChild className='rounded-full text-sm hover:-translate-y-1 md:text-lg  ' style={buttonStyle}>
             <a href='file/cv.pdf' download='cv'>
               Download CV
               <ArrowDownToLine className='ml-2' />
@@ -65,7 +65,7 @@ const Intro = () => {
 
           <Button
             asChild
-            className='rounded-full border bg-white text-lg text-slate-800 hover:-translate-y-1 hover:bg-[unset] dark:hover:text-white'
+            className='rounded-full border bg-white text-sm text-slate-800 hover:-translate-y-1 hover:bg-[unset] dark:hover:text-white md:text-lg'
             style={buttonStyle}
           >
             <Link href={'https://www.facebook.com/messages/t/100027522219067'} target='_blank'>
@@ -74,7 +74,7 @@ const Intro = () => {
             </Link>
           </Button>
         </div>
-        <div className='mt-4 flex items-center gap-2'>
+        <div className='mt-2 flex items-center gap-2 md:mt-4'>
           {iconSocials.map((item, index) => {
             return (
               <Link

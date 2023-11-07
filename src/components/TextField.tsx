@@ -6,14 +6,14 @@ import { cn } from '@/lib/utils'
 const TextFieldVariants = cva('font-medium px-2 md:px-0 block', {
   variants: {
     size: {
-      default: 'text-base  ',
-      lg: 'text-xl',
-      xl: 'text-xl',
-      '2xl': 'text-2xl',
-      '3xl': 'text-3xl',
-      '4xl': 'text-4xl',
-      '5xl': 'text-4xl',
-      title: 'text-7xl font-semibold'
+      default: 'text-sm md:text-base',
+      lg: 'text-sm md:text-lg',
+      xl: 'text-lg md:text-xl',
+      '2xl': 'text-xl md:text-2xl',
+      '3xl': 'text-2xl md:text-3xl',
+      '4xl': 'text-3xl md:text-4xl',
+      '5xl': 'text-3xl md:text-4xl',
+      title: 'text-5xl md:text-7xl font-semibold'
     },
     hover: {
       true: 'hover:-translate-y-2 hover:text-cyan-700 duration-300'

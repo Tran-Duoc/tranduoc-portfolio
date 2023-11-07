@@ -11,9 +11,9 @@ const SkillStyle = ({ name, color }: Props) => {
   return (
     <span
       className={cn({
-        'boxText boxTextGreen boxTextActive': color === 'neon_green',
-        'boxText boxTextBlue boxTextActive': color === 'neon_blue',
-        'boxText boxTextYellow boxTextActive': color === 'neon_yellow'
+        'boxText boxTextGreen boxTextActive text-sm md:text-lg': color === 'neon_green',
+        'boxText boxTextBlue boxTextActive text-sm md:text-lg': color === 'neon_blue',
+        'boxText boxTextYellow boxTextActive text-sm md:text-lg': color === 'neon_yellow'
       })}
     >
       {name}
